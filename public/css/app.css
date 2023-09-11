@@ -1,0 +1,430 @@
+body {
+    background-color: #ffffff;
+    color: #9b4dca;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+}
+
+main>header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    background-color: #d2afe7;
+    padding: 1em;
+    margin: 0;
+}
+
+main>header h1 {
+    margin: 0;
+}
+
+main>header a.button {
+    margin: 1em;
+    justify-self: center;
+}
+
+main>header span {
+    margin: 1em;
+    justify-self: center;
+}
+
+
+#content label {
+    font-weight: normal;
+}
+
+#content>form {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 20em;
+    border: 1px solid #d2afe7;
+}
+
+#content>form .error {
+    font-weight: bold;
+    color: #ff3333;
+}
+
+#content>form input {
+    background-color: white;
+}
+
+@media (max-width: 70em) {
+    main>header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+    main>header h1 {
+        grid-row-end: span 2;
+    }
+}
+
+@media (max-width: 40em) {
+    #cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 25em) {
+    body {
+        margin: 0;
+    }
+    main>header {
+        margin: 0;
+        padding: 0.5em;
+    }
+    main>header span {
+        margin: 0;
+    }
+    #content form {
+        margin: 0;
+        max-width: 25em;
+    }
+}
+
+button {
+    background-color: #9b4dca;
+    border-color: #9b4dca;
+}
+
+a.button {
+    background-color: #9b4dca;
+    border-color: #9b4dca;
+}
+
+a.button.button-outline {
+    color: #9b4dca;
+}
+
+a {
+    color: #9b4dca;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border-color: #9b4dca;
+}
+
+.newsBox {
+    background: none;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    min-width: 700px;
+    min-height: 350px;
+    padding-bottom: 100px;
+}
+
+.newsImage {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    min-width: 350px;
+	min-height: 250px;
+}
+
+.newsInfo {
+    font-family: "Times New Roman";
+    overflow: hidden;
+    line-height: 1.0;
+}
+
+.newsTopics {
+    width: 100%;
+    font-size: 170%;
+    padding: 10px;
+    color: #8b85d6;
+    overflow: hidden;
+}
+
+.newsTitle {
+    height: 40%;
+    width: 100%;
+    font-size: 200%;
+    padding: 10px;
+}
+
+.newsContent {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    max-height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	margin-top: 10px;
+}
+
+.userBox {
+    padding: 25px;
+}
+
+.newsButton {
+    padding: 25px;
+    float: right;
+	text-align: center;
+}
+
+.userButton {
+    padding: 25px;
+    float: right;
+}
+
+.newsDetail {
+    display: flex;
+    padding: 30px;
+}
+
+.newsDetailImg {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.newsDetailLeft {
+    width: 80%;
+}
+
+.newsDetailTopic {
+    color: #8b85d6;
+    font-size: 200%;
+}
+
+.newsDetailTitle {
+    font-weight: normal;
+}
+
+.newsDetailContent {
+    width: 50%;
+    float: left;
+    display: inline-block;
+	
+}
+
+.newsDetailRight {
+    border-top: 2px solid black;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.newsDetailWriter {
+    padding-top: 10px;
+    font-family: serif;
+    font-weight: bold;
+    line-height: 3px;
+    text-align: center;
+}
+
+.newsDetailData {
+    font-family: serif;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.profile {
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 50px;
+    border: 3pt;
+    flex-grow: 1;
+}
+
+.username {
+    font-size: 5.0vh;
+}
+
+.bio {
+    font-family: "Times New Roman";
+    overflow: hidden;
+    font-size: 150%;
+    padding-top: 40px;
+    padding-left: 80px;
+    flex-grow: 2;
+    text-align: left;
+}
+
+.info {
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+footer {
+    background-color: #d2afe7;
+    margin-top: 1em;
+}
+
+.footerDiv {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBold {
+    font-weight: bold;
+    font-family: "Times New Roman";
+    font-size: 115%;
+}
+
+.footerInfo {
+    padding-left: 15%;
+    font-size: 90%;
+}
+
+.infoPage {
+    color: #8b85d6;
+    font-family: "Times New Roman";
+}
+
+.centeredText {
+    text-align: center;
+    font-size: large;
+    padding: 8%;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.textBox {
+    text-align: left;
+    font-size: medium;
+    padding: 5%;
+}
+
+.topicBar{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 1em;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background-color: #d2afd7;
+}
+
+.topicBarTopic{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.commentSection{
+	padding: 30px;
+	width: 75%;
+}
+
+.comments{
+	border: 1px solid;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.commentContent{
+	margin-top: 8px;
+	margin-bottom: 5px;
+	justify-content: center;
+    align-items: center;
+}
+
+.editComment{
+	float: right;
+	font-size: 70%;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.deleteComment{
+	float: right;
+	font-size: 70%;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: none;
+	border: none;
+	padding: 0;
+	font-family: arial, sans-serif;
+	color: #9b4dca;
+	cursor: pointer;
+	width: auto;
+}
+
+.userPosts{
+	width: 100%;
+	display: flex;
+	
+}
+
+.userPosts h1{
+	font-size: 170%;
+}
+
+.userNewsBox{
+	width: 50%;
+	padding-left: 50px;
+}
+
+.userCommentsBox{
+	width: 50%;
+	padding-left: 50px;
+}
+
+.userNews{
+	border-top: 2px solid black;
+}
+
+.userNewsTitle{
+	padding-top: 10px;
+}
+
+.userComments{
+	border-top: 2px solid black;
+}
+
+.userCommentsTitle{
+	padding-top: 10px;
+}
+
+.greenButton {
+	background-color: #4CAF50;
+}
+
+.redButton {
+	background-color: red;
+}
+
+.cancelButton {
+	background-color: grey;
+}
+
+.voteNewsButton {
+	padding-top: 10px;
+	text-align: center;
+}
+
+.voteCommentButton {
+	padding-top: 10px;
+	text-align: right;
+}
+
+.suggestButton {
+    padding-right:50px; 
+	float:right;
+}
+
+#saltar {
+	position: absolute;
+	left: -10000px;
+	top: -10000px;
+}
+
+#saltar a:focus, #saltar a:active {
+	display:block;
+	position:absolute;
+	top: 10000px;
+	left: 10350px;
+	background: #fff;
+}
